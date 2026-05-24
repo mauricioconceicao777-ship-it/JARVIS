@@ -1,4 +1,4 @@
-# Jarvis: Assistente Pessoal Baseado em Texto
+# Jarvis: Assistente Pessoal
 
 ## Introdução
 Este documento detalha a arquitetura, as tecnologias empregadas e as funcionalidades do sistema Jarvis, um assistente pessoal baseado em texto. O objetivo é fornecer uma compreensão aprofundada do sistema, servindo como manual e base para futuras melhorias.
