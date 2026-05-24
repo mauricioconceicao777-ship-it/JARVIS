@@ -1,0 +1,17 @@
+{
+  "acao": "ver_hora",
+  "gatilhos": [
+    "que horas",
+    "que horas são",
+    "que horas sao",
+    "qual a hora",
+    "qual hora",
+    "hora agora",
+    "me fala as horas",
+    "me diga as horas",
+    "ver hora",
+    "hora certa",
+    "horário agora",
+    "horario agora"
+  ]
+}

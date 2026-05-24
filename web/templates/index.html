@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div id="menuOverlay" class="menu-overlay hidden"></div>
+
+    <aside id="sideMenu" class="side-menu">
+        <div class="side-menu-header">
+            <span>Jarvis</span>
+            <button id="closeMenuBtn" class="close-menu-btn">×</button>
+        </div>
+
+        <nav class="side-menu-nav">
+            <button id="configBtn" class="menu-item">⚙️ Configurações</button>
+        </nav>
+
+        <section id="configPanel" class="config-panel hidden">
+            <h3>Configurações</h3>
+
+            <label class="config-label">
+                Satélite
+                <select id="satelliteSelect">
+                    <option value="🌙">🌙 Lua</option>
+                    <option value="🛰️">🛰️ Satélite</option>
+                    <option value="⭐">⭐ Estrela</option>
+                    <option value="📡">📡 Antena</option>
+                    <option value="⚙️">⚙️ Sistema</option>
+                </select>
+            </label>
+
+            <label class="config-label">
+                Tamanho do globo
+                <input id="globeSizeRange" type="range" min="6" max="11" value="8">
+            </label>
+
+            <label class="config-check">
+                <input id="showSatelliteCheck" type="checkbox" checked>
+                Mostrar satélite
+            </label>
+
+            <button id="resetConfigBtn" class="config-reset-btn">
+                Restaurar padrão
+            </button>
+        </section>
+    </aside>
+
+    <main class="app">
+
+        <header class="topbar">
+            <button id="openMenuBtn" class="menu-btn">☰</button>
+            <div class="ticker">
+                <span id="tickerText">Jarvis online • Localizando...</span>
+            </div>
+        </header>
+
+        <section class="center-area">
+
+            <div id="ascii-orbit">
+                <div id="lua">🌙</div>
+                <pre id="asciiGlobo">Carregando Terra...</pre>
+            </div>
+
+            <div id="mensagemAtual" class="mensagem-atual hidden"></div>
+        </section>
+
+        <footer class="input-bar">
+            <input
+                type="text"
+                id="input"
+                placeholder="Mensagem"
+                autocomplete="off"
+            />
+
+            <button id="voiceBtn" class="voice-btn" title="Falar">🎤</button>
+            <button id="sendBtn" class="send-btn" title="Enviar">➤</button>
+        </footer>
+
+    </main>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
