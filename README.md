@@ -16,21 +16,7 @@ A arquitetura do Jarvis é dividida em módulos principais, cada um com responsa
 *   **Módulo `web` (Inferido):** A presença de `jarvis/web/app.py`, `jarvis/web/static/css/style.css`, `jarvis/web/static/js/script.js` e `jarvis/web/templates/index.html` sugere uma interface web para o Jarvis, embora o `main.py` não a utilize diretamente no fluxo principal de console.
 
 ### Diagrama de Alto Nível (Conceitual)
-```mermaid
-graph TD
-    A[Input do Usuário] --> B{Triggers}
-    B --> C{Detectar Ação}
-    C -- Ação Detectada --> D[Features]
-    D --> E[Executar Ação]
-    E --> F[Responder Resultado]
-    C -- Nenhuma Ação --> G[Core]
-    G --> H[Perguntar Ollama]
-    H --> I[Processar Resposta Ollama]
-    I --> F
-    F --> J[Usuário]
-    K[Web_Inferido] --> L[Interface Web]
-    L --> A
-```
+![Diagrama de Alto Nível](https://private-us-east-1.manuscdn.com/sessionFile/htOUCkVBA7eYlwpXAblHnx/sandbox/rVz5eSvt0e9P6GIB9wyNs3-images_1779592608337_na1fn_L2hvbWUvdWJ1bnR1L2RpYWdyYW1hX3Yy.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaHRPVUNrVkJBN2VZbHdwWEFibEhueC9zYW5kYm94L3JWejVlU3Z0MGU5UDZHSUI5d3lOczMtaW1hZ2VzXzE3Nzk1OTI2MDgzMzdfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyUnBZV2R5WVcxaFgzWXkucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=ItQNCXYPBscpS4U9X1dT9ltYPMkPqbMR2Gs~5~pZSvDKEwrfDLoYaezzN1Y21lGrJ9sv3zvBJ-jT1kxq5N1Ebd2jM9MOV1EbrenAZOXqXp9L2zEKQR2dfZzuWD8Wn2X7RmqIrbxMRSI4iD0Hvp-HrXiTsTyoEVOe2w6e8~-ej9R1u7~-tZzulPnl5Ii-oOnns1W43kdOsYsqH9QVHJsKIABhbbmYAqIjVjRmruQYUBF6T38T6MN6UFS7S1CUTCALRCBk5WwizgjxqdICJzy7H4SptomZj4WlI-tdB72W4-mojytfMkVv9wMRPDqpMEtsdd15j4HbuIkpaNaOl3HEBg__)
 
 ## Tecnologias e Bibliotecas Utilizadas
 O sistema Jarvis é construído principalmente em Python e faz uso de diversas bibliotecas padrão e de terceiros para suas funcionalidades.
